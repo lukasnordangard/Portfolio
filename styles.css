@@ -209,11 +209,16 @@ p {
 }
 
 .bio-content {
+    flex-direction: column;
+}
+
+.bio-img-text-container {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
+
 
 .bio-img {
     width: 30%;
@@ -227,13 +232,37 @@ p {
     width: 60%;
 }
 
+.main-skills-container{
+    margin-top: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-skill-item{
+    width: 300px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+    .main-skills-container{
+        flex-direction: column;
+    }
+}
+
 @media screen and (max-width: 1000px) {
-    .bio-content {
+    .bio-img-text-container {
         flex-direction: column-reverse;
     }
 
     .bio-img {
         width: 50%;
+        margin-top: 5%;
     }    
 
     .bio-text {
@@ -267,13 +296,15 @@ p {
     display: grid;
     gap: var(--_spacer);
     grid-auto-flow: column;
-    grid-auto-columns: 33%;
+    grid-auto-columns: 50%;
   
     padding: 0 var(--_spacer) var(--_spacer);
   
-    grid-template-columns: repeat(3, 1fr); /* Skapa 4 kolumner med lika stor bredd */
-    grid-gap: 8%; /* Mellanrum mellan elementen */
-    margin-bottom: 5%;
+    grid-template-columns: repeat(2, 1fr); /* Skapa 4 kolumner med lika stor bredd */
+    grid-gap: 15%; /* Mellanrum mellan elementen */
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
 }
   
 .media-element {
@@ -302,6 +333,14 @@ p {
     text-align: center;
     margin: 0;
     margin-top: 2%;
+}
+
+@media screen and (max-width: 768px) {
+    .media-scroller {
+        grid-gap: 10%; /* Mellanrum mellan elementen */
+        margin: 0;
+        margin-bottom: 5%;    
+    }    
 }
 
 @media screen and (min-width: 1501px) {
