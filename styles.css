@@ -14,11 +14,21 @@ p {
     font-family: 'Quicksand', Arial, sans-serif;;
 }
 
+/*=============== Top container ===============*/
+
+
+.top-container {
+    background-color: #A0B2E2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 /*=============== nav ===============*/
 
 .topnav{
     width: 100%;
-    background-color: #A0B2E2;
     margin: 0;
     display: flex;
     flex-direction: row;
@@ -54,7 +64,6 @@ p {
 /*=============== Introduction ===============*/
 
 .introduction-container {
-    background-color: #A0B2E2;
     display: flex;
     justify-content: space-between;
 }
@@ -106,6 +115,19 @@ p {
 .lukas-img img {
     margin: 0;
     width: 100%;
+}
+
+@media screen and (min-width: 1501px) {
+    .introduction-container {
+        width: 1500px;
+    }    
+
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;    
+    }
 }
 
 @media screen and (max-width: 1000px) {
@@ -194,56 +216,69 @@ p {
     grid-template-columns: repeat(3, 1fr); /* Skapa 4 kolumner med lika stor bredd */
     grid-gap: 8%; /* Mellanrum mellan elementen */
     margin-bottom: 5%;
-  }
+}
   
-  .media-element {
+.media-element {
     display: grid;
     grid-template-rows: min-content;
     gap: var(--_spacer);
     box-shadow: var(--shadow-2);
-  }
+}
   
-  .media-element > img {
+.media-element > img {
     inline-size: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
-  }
+}
   
-  .media-element-title {
+.media-element-title {
     display: flex;
     justify-content: center;
     text-align: center;
     margin: 0;
     margin-top: 2%;
-  }
+}
 
-  .media-element-text {
+.media-element-text {
     display: flex;
     text-align: center;
     margin: 0;
     margin-top: 2%;
-  }
+}
+
+@media screen and (min-width: 1501px) {
+    .project-container {
+        width: 1500px;
+    }    
+}
 
 
-  /*=============== Om mig ===============*/
+/*=============== Om mig ===============*/
 
-  .bio-container {
+.bio-container {
     margin: 5%;
-  }
+}
 
-  .bio-title {
+.bio-title {
     display: flex;
     justify-content: center;
     margin-top: 2%;
     margin-bottom: 2%;
 }
 
+@media screen and (min-width: 1501px) {
+    .bio-container {
+        width: 1500px;
+    }
+}
 
-
-  /*=============== Kontakt ===============*/
+/*=============== Kontakt ===============*/
 
 .contact {
     background-color: #0E1A2A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .contact p {
@@ -266,3 +301,8 @@ p {
     margin-top: 3%;
 }
 
+@media screen and (min-width: 1501px) {
+    .contact-container {
+        width: 1500px;
+    }
+}
