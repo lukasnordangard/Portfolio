@@ -179,9 +179,52 @@ p {
     display: flex;
     justify-content: center;
     margin-top: 2%;
+    margin-bottom: 2%;
 }
 
-/*=============== Kontakt ===============*/
+.media-scroller {
+    --_spacer: var(--size-3);
+    display: grid;
+    gap: var(--_spacer);
+    grid-auto-flow: column;
+    grid-auto-columns: 33%;
+  
+    padding: 0 var(--_spacer) var(--_spacer);
+  
+    grid-template-columns: repeat(3, 1fr); /* Skapa 4 kolumner med lika stor bredd */
+    grid-gap: 8%; /* Mellanrum mellan elementen */
+    margin-bottom: 5%;
+  }
+  
+  .media-element {
+    display: grid;
+    grid-template-rows: min-content;
+    gap: var(--_spacer);
+    box-shadow: var(--shadow-2);
+  }
+  
+  .media-element > img {
+    inline-size: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+  }
+  
+  .media-element-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+    margin-top: 2%;
+  }
+
+  .media-element-text {
+    display: flex;
+    text-align: center;
+    margin: 0;
+    margin-top: 2%;
+  }
+
+  /*=============== Kontakt ===============*/
 
 .contact {
     background-color: #0E1A2A;
