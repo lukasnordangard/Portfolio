@@ -189,6 +189,66 @@ p {
 }
 
 
+/*=============== Om mig ===============*/
+
+.bio-container {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.bio-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.bio-title h1 {
+    margin: 0;
+}
+
+.bio-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bio-img {
+    width: 30%;
+}
+
+.bio-img img {
+    width: 100%;
+}
+
+.bio-text {
+    width: 60%;
+}
+
+@media screen and (max-width: 1000px) {
+    .bio-content {
+        flex-direction: column-reverse;
+    }
+
+    .bio-img {
+        width: 50%;
+    }    
+
+    .bio-text {
+        text-align: center;
+        width: 80%;
+    }
+}
+
+@media screen and (min-width: 1501px) {
+    .bio-container {
+        width: 1500px;
+    }
+}
+
+
 /*=============== Projekt ===============*/
 
 .project-container {
@@ -200,8 +260,6 @@ p {
 .project-title {
     display: flex;
     justify-content: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
 }
 
 .media-scroller {
@@ -253,25 +311,6 @@ p {
 }
 
 
-/*=============== Om mig ===============*/
-
-.bio-container {
-    margin: 5%;
-}
-
-.bio-title {
-    display: flex;
-    justify-content: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-
-@media screen and (min-width: 1501px) {
-    .bio-container {
-        width: 1500px;
-    }
-}
-
 /*=============== Kontakt ===============*/
 
 .contact {
@@ -301,8 +340,45 @@ p {
     margin-top: 3%;
 }
 
+.contact-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-item {
+    width: 300px;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.contact-item h2 {
+    color: whitesmoke;
+}
+
+.contact-item a {
+    color: whitesmoke;
+    text-decoration: none;
+    font-family: 'Quicksand', Arial, sans-serif;
+    margin: 0;
+}
+
+.contact-item p {
+    margin: 0;
+}
+
 @media screen and (min-width: 1501px) {
     .contact-container {
         width: 1500px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contact-content{
+        flex-direction: column;
     }
 }
