@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+}
+
+.container {
+    margin: 0;
+}
+
+h1, h2, .links a {
+    font-family: 'Poppins', Arial, sans-serif;
+}
+
+p {
+    font-family: 'Quicksand', Arial, sans-serif;;
+}
+
+/*=============== nav ===============*/
+
+.topnav{
+    width: 100%;
+    background-color: #A0B2E2;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /*justify-content: space-between;*/
+    justify-content: center;
+}
+
+/*
+.name{
+    margin-left: 5%;
+}
+*/
+
+.links{
+    margin: 15px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #0E1A2A;
+    /*margin-left: 40px;*/
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.links p {
+    text-decoration: none;
+    color: #0E1A2A;
+}
+
+
+/*=============== Introduction ===============*/
+
+.introduction-container {
+    background-color: #A0B2E2;
+    display: flex;
+    justify-content: space-between;
+}
+
+.introduction-text-container {
+    position: relative;
+    width: 40%;
+    margin-left: 10%;
+    margin-bottom: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.introduction-text-container img {
+    width: 100%;
+    margin: 0;
+}
+
+.introduction-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.introduction-text p {
+    color: whitesmoke;
+    margin: 0;
+}
+
+.introduction-text h1 {
+    color: whitesmoke;
+    margin: 0;
+    margin-bottom: 3%;
+}
+
+
+.lukas-img {
+    width: 40%;
+    display: flex;
+    margin-right: 10%;
+    margin-top: 10%;
+}
+
+.lukas-img img {
+    margin: 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+    .introduction-text h1 {
+        font-size: 24px;
+    }
+
+    .introduction-text p {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .introduction-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .introduction-text-container {
+        width: 60%;
+        margin: 0;
+        margin-top: 5%;
+    }
+
+    .introduction-text{
+        display: flex;
+        text-align: center;
+        width: 80%;
+    }
+
+    .lukas-img {
+        margin: 0;
+        width: 70%;
+        margin-top: 5%;
+    }    
+}
+
+@media screen and (max-width: 560px) {
+    .introduction-text h1 {
+        font-size: 20px;
+    }
+
+    .introduction-text p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .blobb-img {
+        display: none;
+    }
+
+    .introduction-text {
+        position: static;
+        transform: none;
+        width: 100%;
+        margin-top: 15%;
+    }
+}
+
+
+/*=============== Projekt ===============*/
+
+.project-container {
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+}
+
+.project-title {
+    display: flex;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+/*=============== Kontakt ===============*/
+
+.contact {
+    background-color: #0E1A2A;
+}
+
+.contact p {
+    color: whitesmoke;
+}
+
+.contact-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+.contact-title {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-title h1 {
+    color: whitesmoke;
+    margin-top: 3%;
+}
+
