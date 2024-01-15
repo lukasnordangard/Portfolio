@@ -343,25 +343,15 @@ p {
     justify-content: center;
 }
 
+/* Base styles for all screen sizes */
 .projects-grid {
-    --_spacer: var(--size-3);
     display: grid;
-    gap: var(--_spacer);
-    grid-auto-flow: column;
-    grid-auto-columns: 50%;
-  
-    padding: 0 var(--_spacer) var(--_spacer);
-  
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 15%; /* Mellanrum mellan elementen */
-    margin-bottom: 10%;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
 }
-  
+
 .project-grid-element {
-    display: grid;
-    grid-template-rows: min-content;
-    gap: var(--_spacer);
-    box-shadow: var(--shadow-2);
+    text-align: center;
 }
   
 .project-grid-element > img {
@@ -388,19 +378,35 @@ p {
 @media screen and (min-width: 1501px) {
     .project-container {
         width: 1500px;
+        margin-top: 0;
     }    
 }
 
-@media screen and (max-width: 768px) {
+/* Responsive styles for screens above 768px */
+@media (min-width: 769px) {
     .projects-grid {
-        grid-gap: 10%; /* Mellanrum mellan elementen */
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Responsive styles for screens between 561px and 768px */
+@media (min-width: 561px) and (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
         margin: 0;
         margin-bottom: 5%;    
-    }  
-    
+    }
+
     .project-container {
         margin-bottom: 20%;
     }    
+}
+
+/* Responsive styles for screens below 560px */
+@media (max-width: 560px) {
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
 }
 
 
