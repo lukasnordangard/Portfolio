@@ -199,9 +199,7 @@ p {
 /*=============== Om mig ===============*/
 
 .bio-container {
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
+    margin: 5%;
 }
 
 .bio-title {
@@ -225,7 +223,6 @@ p {
     justify-content: space-between;
     align-items: center;
 }
-
 
 .bio-img {
     width: 30%;
@@ -253,25 +250,11 @@ p {
     margin-right: 5%;
 }
 
-.channel-git:hover {
+.channel a:hover {
     stroke: #A0B2E2;
     fill: #A0B2E2;
 }
 
-.channel-linkedin:hover {
-    stroke: #A0B2E2;
-    fill: #A0B2E2;
-}
-
-.channel-instagram:hover {
-    stroke: #A0B2E2;
-    fill: #A0B2E2;
-}
-
-.channel-mail:hover {
-    stroke: #A0B2E2;
-    fill: #A0B2E2;
-}
 .main-skills-container{
     margin-top: 5%;
     display: flex;
@@ -297,18 +280,10 @@ p {
     margin: 3%;
 }
 
-@media screen and (max-width: 450px) {
-    .bio-text {
-        width: 95%;
+@media screen and (min-width: 1501px) {
+    .bio-container {
+        width: 1500px;
     }
-    
-}
-
-@media screen and (max-width: 768px) {
-    .main-skills-container{
-        flex-direction: column;
-    }
-    
 }
 
 @media screen and (max-width: 1000px) {
@@ -336,9 +311,22 @@ p {
     }    
 }
 
-@media screen and (min-width: 1501px) {
-    .bio-container {
-        width: 1500px;
+@media screen and (max-width: 768px) {
+    .main-skills-container{
+        flex-direction: column;
+    }
+    
+}
+
+@media screen and (max-width: 450px) {
+    .bio-text {
+        width: 95%;
+    }
+    
+    .bio-img {
+        width: 80%;
+        margin-top: 20%;
+        margin-bottom: 20%;
     }
 }
 
@@ -346,7 +334,7 @@ p {
 /*=============== Projekt ===============*/
 
 .project-container {
-    margin: 5%;
+    margin: 10%;
 }
 
 .project-title {
@@ -355,7 +343,7 @@ p {
     justify-content: center;
 }
 
-.media-scroller {
+.projects-grid {
     --_spacer: var(--size-3);
     display: grid;
     gap: var(--_spacer);
@@ -364,27 +352,25 @@ p {
   
     padding: 0 var(--_spacer) var(--_spacer);
   
-    grid-template-columns: repeat(2, 1fr); /* Skapa 4 kolumner med lika stor bredd */
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 15%; /* Mellanrum mellan elementen */
-    margin-left: 10%;
-    margin-right: 10%;
     margin-bottom: 10%;
 }
   
-.media-element {
+.project-grid-element {
     display: grid;
     grid-template-rows: min-content;
     gap: var(--_spacer);
     box-shadow: var(--shadow-2);
 }
   
-.media-element > img {
+.project-grid-element > img {
     inline-size: 100%;
     aspect-ratio: 4 / 3;
     object-fit: cover;
 }
   
-.media-element-title {
+.project-grid-element-title {
     display: flex;
     justify-content: center;
     text-align: center;
@@ -392,24 +378,28 @@ p {
     margin-top: 2%;
 }
 
-.media-element-text {
+.project-grid-element-text {
     display: flex;
     text-align: center;
     margin: 0;
     margin-top: 2%;
 }
 
-@media screen and (max-width: 768px) {
-    .media-scroller {
-        grid-gap: 10%; /* Mellanrum mellan elementen */
-        margin: 0;
-        margin-bottom: 5%;    
-    }    
-}
-
 @media screen and (min-width: 1501px) {
     .project-container {
         width: 1500px;
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    .projects-grid {
+        grid-gap: 10%; /* Mellanrum mellan elementen */
+        margin: 0;
+        margin-bottom: 5%;    
+    }  
+    
+    .project-container {
+        margin-bottom: 20%;
     }    
 }
 
@@ -504,14 +494,15 @@ p {
     }
 }
 
+@media screen and (max-width: 1000px) {
+    .contact-item {
+        width: 200px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .contact-content{
         flex-direction: column;
     }
 }
 
-@media screen and (max-width: 1000px) {
-    .contact-item {
-        width: 200px;
-    }
-}
