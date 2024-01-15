@@ -29,6 +29,7 @@ p {
 
 .topnav{
     width: 100%;
+    height: 50px;
     margin: 0;
     display: flex;
     flex-direction: row;
@@ -45,6 +46,11 @@ p {
     color: #0E1A2A;
     margin-left: 20px;
     margin-right: 20px;
+    transition: font-size 0.3s ease; /* Add a smooth transition effect */
+}
+
+.links a:hover {
+    font-size: 20px;
 }
 
 @media screen and (max-width: 450px) {
@@ -237,6 +243,35 @@ p {
     margin-bottom: 10px;
 }
 
+.channels {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.channel {
+    margin-right: 5%;
+}
+
+.channel-git:hover {
+    stroke: #A0B2E2;
+    fill: #A0B2E2;
+}
+
+.channel-linkedin:hover {
+    stroke: #A0B2E2;
+    fill: #A0B2E2;
+}
+
+.channel-instagram:hover {
+    stroke: #A0B2E2;
+    fill: #A0B2E2;
+}
+
+.channel-mail:hover {
+    stroke: #A0B2E2;
+    fill: #A0B2E2;
+}
 .main-skills-container{
     margin-top: 5%;
     display: flex;
@@ -259,7 +294,7 @@ p {
 }
 
 .main-skill-item h2 {
-    margin-bottom: 3%;
+    margin: 3%;
 }
 
 @media screen and (max-width: 450px) {
@@ -273,6 +308,7 @@ p {
     .main-skills-container{
         flex-direction: column;
     }
+    
 }
 
 @media screen and (max-width: 1000px) {
@@ -289,6 +325,15 @@ p {
         text-align: center;
         width: 80%;
     }
+
+    .channels {
+        justify-content: center;
+    }   
+    
+    .channel {
+            margin-right: 5%;
+            margin-left: 5%;
+    }    
 }
 
 @media screen and (min-width: 1501px) {
@@ -416,6 +461,7 @@ p {
 
 .contact-item h2 {
     color: whitesmoke;
+    margin-left: 15px;
 }
 
 .contact-item a {
@@ -423,10 +469,33 @@ p {
     text-decoration: none;
     font-family: 'Quicksand', Arial, sans-serif;
     margin: 0;
+    transition: font-weight 0.3s ease;
+}
+
+.contact-item a:hover {
+    font-weight: bold;
 }
 
 .contact-item p {
     margin: 0;
+}
+
+.contact-item-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.copyright {
+    margin-top: 8%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright p {
+    margin-left: 10px;
 }
 
 @media screen and (min-width: 1501px) {
