@@ -351,6 +351,16 @@ p {
     gap: 30px;
 }
 
+.projects-grid a {
+    text-decoration: none;
+    color: canvastext;
+}
+
+.projects-grid a:hover {
+    color: #A0B2E2;
+    font-weight:bolder;
+}
+
 .project-grid-element {
     text-align: center;
 }
@@ -374,6 +384,12 @@ p {
     text-align: center;
     margin: 0;
     margin-top: 2%;
+}
+
+.project-grid-element-more{
+    margin-top: 10px;
+    text-decoration:underline;
+    font-weight: bold;
 }
 
 @media screen and (min-width: 1501px) {
