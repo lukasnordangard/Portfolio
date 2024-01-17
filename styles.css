@@ -529,3 +529,32 @@ p {
     }
 }
 
+
+/*=============== not-done-container ===============*/
+
+.not-done-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.not-done-content{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 10%;
+}
+
+.not-done-content p{
+    margin-bottom: 30px;
+}
+
+.not-done-content a{
+    font-size: 24px;
+    text-decoration: none;
+    font-family: 'Quicksand', Arial, sans-serif;;
+    font-weight: bolder§;
+    color: #0E1A2A;
+}
+
