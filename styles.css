@@ -753,6 +753,11 @@ p {
     .info-item-title{
         justify-content: center;
     }
+
+    .tools{
+        display: flex;
+        justify-content: center;
+    }
 }
 
 
