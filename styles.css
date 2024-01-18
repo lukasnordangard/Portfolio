@@ -679,7 +679,7 @@ p {
 
 
 
-/* Back btn */
+/*=============== Back btn ===============*/
 
 .project-content {
     margin: 0;
@@ -687,12 +687,71 @@ p {
 
 .back-btn {
     margin: 5%;
+    margin-top: 2%;
+    background-color: #0E1A2A;
+    border-radius: 50px;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
 }
 
-.back-btn a {
-    font-size: 24px;
-    text-decoration: none;
+.back-btn p {
+    font-size: 18px;
     font-family: 'Quicksand', Arial, sans-serif;;
-    font-weight: bolder§;
-    color: #0E1A2A;
+    font-weight: bolder;
+    color: whitesmoke;
+    margin: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
+
+/*=============== info-container ===============*/
+
+.info-container{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: row;
+}
+
+.info-item{
+    margin: 5%;
+    margin-top: 0;
+}
+
+.info-item-title{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.info-item-title h2 {
+    margin-left: 15px;
+}
+
+.tools{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+}
+
+@media only screen and (max-width: 768px) {
+    .info-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .info-item{
+        text-align: center;
+    }
+
+    .info-item-title{
+        justify-content: center;
+    }
+}
+
+
