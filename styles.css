@@ -632,6 +632,16 @@ p {
     }
 }
 
+@media only screen and (max-width: 1000px) {
+    .project-introduction-text h1 {
+        margin-bottom: 0;
+    }
+
+    .project-introduction-text p {
+        font-size: 0.9em;
+    }
+}
+
 @media only screen and (max-width: 768px) {
 
     .project-introduction-text-container{
@@ -656,10 +666,9 @@ p {
         text-align: center;
     }    
 
-    .project-introduction-text h1 {
-        margin-bottom: 0;
+    .project-introduction-text p {
+        font-size: 1em;
     }
-
 }
 
 @media only screen and (max-width: 480px) {
