@@ -550,6 +550,15 @@ p {
     justify-content: center;
 }
 
+.bimctrl-project-top-container{
+    background-image: url('imgs/BIMctrl/floorplan2.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .project-introduction-container{
     display: flex;
     justify-content: center;
