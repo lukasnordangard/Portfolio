@@ -65,6 +65,7 @@ p {
 .introduction-container {
     display: flex;
     justify-content: space-between;
+    max-width: 1500px;
 }
 
 .introduction-text-container {
@@ -117,10 +118,6 @@ p {
 }
 
 @media screen and (min-width: 1501px) {
-    .introduction-container {
-        width: 1500px;
-    }    
-
     .content-container {
         display: flex;
         flex-direction: column;
@@ -215,6 +212,7 @@ p {
 
 .bio-content {
     flex-direction: column;
+    max-width: 1500px;
 }
 
 .bio-img-text-container {
@@ -281,12 +279,6 @@ p {
     margin: 3%;
 }
 
-@media screen and (min-width: 1501px) {
-    .bio-container {
-        width: 1500px;
-    }
-}
-
 @media screen and (max-width: 1000px) {
     .bio-img-text-container {
         flex-direction: column-reverse;
@@ -337,6 +329,7 @@ p {
 
 .project-container {
     margin: 10%;
+    max-width: 1500px;
 }
 
 .project-title {
@@ -391,13 +384,6 @@ p {
     margin-top: 10px;
     text-decoration:underline;
     font-weight: bold;
-}
-
-@media screen and (min-width: 1501px) {
-    .project-container {
-        width: 1500px;
-        margin-top: 0;
-    }    
 }
 
 /* Responsive styles for screens above 768px */
@@ -461,6 +447,7 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 1500px;
 }
 
 .contact-item {
@@ -510,12 +497,6 @@ p {
 
 .copyright p {
     margin-left: 10px;
-}
-
-@media screen and (min-width: 1501px) {
-    .contact-container {
-        width: 1500px;
-    }
 }
 
 @media screen and (max-width: 1000px) {
