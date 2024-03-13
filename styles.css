@@ -34,6 +34,33 @@ footer {
     background-color: #0E1A2A;
 }
 
+
+/*Lista under inflytande utav en media query*/
+.horizontal-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.horizontal-list li {
+    margin-right: 10px;
+    font-family: 'Quicksand', Arial, sans-serif;
+    font-size: 1em;
+}
+
+/* Media query för att ändra till vertikal lista vid behov */
+@media screen and (max-width: 768px) {
+    .horizontal-list {
+        flex-direction: column;
+    }
+
+    .horizontal-list li {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
 /*=============== Top container ===============*/
 
 
