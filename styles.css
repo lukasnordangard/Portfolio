@@ -11,7 +11,15 @@ h1, h2, .links a {
 }
 
 p {
-    font-family: 'Quicksand', Arial, sans-serif;;
+    font-family: 'Quicksand', Arial, sans-serif;
+}
+
+header{
+    background-color: #A0B2E2;
+}
+
+footer{
+    background-color: #0E1A2A;
 }
 
 /*=============== Top container ===============*/
@@ -421,7 +429,6 @@ p {
 /*=============== Kontakt ===============*/
 
 .contact {
-    background-color: #0E1A2A;
     display: flex;
     align-items: center;
     justify-content: center;
