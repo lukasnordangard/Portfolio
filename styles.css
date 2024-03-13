@@ -19,6 +19,9 @@ p {
 
 .top-container {
     background-color: #A0B2E2;
+    /*background-image: url('imgs/background.png');
+    background-size: cover;
+    background-position: center;*/
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,6 +46,7 @@ p {
 
 .links a {
     text-decoration: none;
+    /*color: whitesmoke;*/
     color: #0E1A2A;
     margin-left: 20px;
     margin-right: 20px;
@@ -550,13 +554,16 @@ p {
     justify-content: center;
 }
 
-.bimctrl-project-top-container{
+.bimctrl{
     background-image: url('imgs/BIMctrl/floorplan2.png');
     background-size: cover;
     background-position: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+}
+
+.minna{
+    background-image: url('imgs/minna/background.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .project-introduction-container{
