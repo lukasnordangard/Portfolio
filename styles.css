@@ -6,19 +6,31 @@ body {
     margin: 0;
 }
 
-h1, h2, .links a {
+.links a {
     font-family: 'Poppins', Arial, sans-serif;
+    font-size: 1em;
+}
+
+h1 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 2em;
+}
+
+h2 {
+    font-family: 'Poppins', Arial, sans-serif;
+    font-size: 1.5em;
 }
 
 p {
     font-family: 'Quicksand', Arial, sans-serif;
+    font-size: 1em;
 }
 
-header{
+header {
     background-color: #A0B2E2;
 }
 
-footer{
+footer {
     background-color: #0E1A2A;
 }
 
@@ -62,7 +74,7 @@ footer{
 }
 
 .links a:hover {
-    font-size: 20px;
+    font-size: 1.3em;
 }
 
 @media screen and (max-width: 450px) {
@@ -140,11 +152,11 @@ footer{
 
 @media screen and (max-width: 1000px) {
     .introduction-text h1 {
-        font-size: 24px;
+        font-size: 1.5em;
     }
 
     .introduction-text p {
-        font-size: 14px;
+        font-size: 0.9em;
     }
 }
 
@@ -175,11 +187,11 @@ footer{
 
 @media screen and (max-width: 560px) {
     .introduction-text h1 {
-        font-size: 20px;
+        font-size: 1.3em;
     }
 
     .introduction-text p {
-        font-size: 12px;
+        font-size: 0.8em;
     }
 }
 
@@ -196,11 +208,11 @@ footer{
     }
 
     .introduction-text h1 {
-        font-size: 28px;
+        font-size: 1.8em;
     }
 
     .introduction-text p {
-        font-size: 16px;
+        font-size: 1em;
     }
 }
 
@@ -544,7 +556,7 @@ footer{
 }
 
 .not-done-content a{
-    font-size: 24px;
+    font-size: 1.5em;
     text-decoration: none;
     font-family: 'Quicksand', Arial, sans-serif;;
     font-weight: bolder§;
@@ -712,7 +724,7 @@ footer{
 }
 
 .back-btn p {
-    font-size: 18px;
+    font-size: 1.1em;
     font-family: 'Quicksand', Arial, sans-serif;;
     font-weight: bolder;
     color: whitesmoke;
