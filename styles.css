@@ -298,13 +298,17 @@ footer {
 
 .channel {
     margin-right: 5%;
+    transition: transform 0.3s ease; /* Add transition for smooth animation */
+}
+
+.channel:hover {
+    transform: rotate(-10deg); /* Rotate the channel item 360 degrees on hover */
 }
 
 .channel a:hover {
     stroke: #A0B2E2;
     fill: #A0B2E2;
 }
-
 .main-skills-container{
     margin-top: 5%;
     display: flex;
@@ -811,6 +815,55 @@ footer {
     }
 }
 
+@keyframes rotateAstronaut1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotateAstronaut2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+.astronaut-container-1 {
+    display: flex;
+    width: auto;
+    justify-content: end;
+    margin-right: 10%;
+}
+
+.astronaut-container-2 {
+    display: flex;
+    width: auto;
+    justify-content: start;
+    margin-left: 10%;
+}
+
+.astronaut {
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.astronaut-1 {
+    animation: rotateAstronaut1 10s linear infinite;
+}
+
+.astronaut-2 {
+    animation: rotateAstronaut2 6s linear infinite;
+}
+
+.astronaut img {
+    width: 100%;
+}
 
 
 .project-img{
