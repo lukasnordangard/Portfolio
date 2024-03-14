@@ -572,6 +572,10 @@ footer {
 }
 
 .not-done-content{
+    background-color: #A0B2E2;
+    border-radius: 15px;
+    padding: 5%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
     justify-content: center;
     align-items: center;
     text-align: center;
