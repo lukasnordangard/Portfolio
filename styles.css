@@ -65,10 +65,10 @@ footer {
 
 
 .top-container {
-    background-color: #A0B2E2;
-    /*background-image: url('imgs/background.png');
+    /*background-color: #A0B2E2;*/
+    background-image: url('imgs/background.png');
     background-size: cover;
-    background-position: center;*/
+    background-position: center;
     display: flex;
     flex-direction: column;
     align-items: center;
