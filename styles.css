@@ -576,7 +576,7 @@ footer {
 }
 
 .not-done-content{
-    background-color: #A0B2E2;
+    background-color: whitesmoke;
     border-radius: 15px;
     padding: 5%;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
@@ -591,13 +591,17 @@ footer {
 }
 
 .not-done-content a{
-    font-size: 1.5em;
+    font-size: 1.2em;
     text-decoration: none;
     font-family: 'Quicksand', Arial, sans-serif;;
     font-weight: bolder§;
-    color: #0E1A2A;
+    color: whitesmoke;
+    background-color: #0E1A2A;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
 }
-
 
 /*=============== Project view ===============*/
 
