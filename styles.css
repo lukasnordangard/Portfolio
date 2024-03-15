@@ -853,11 +853,11 @@ footer {
     justify-content: center;
 }
 
-.astronaut-1 {
+#astronaut-1 {
     animation: rotateAstronaut1 10s linear infinite;
 }
 
-.astronaut-2 {
+#astronaut-2 {
     animation: rotateAstronaut2 6s linear infinite;
 }
 
