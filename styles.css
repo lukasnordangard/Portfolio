@@ -915,6 +915,10 @@ footer {
     justify-content: center;
 }
 
+#memoApp2 {
+    display: none;
+}
+
 .project-img img{
     width: 100%;
 }
@@ -941,4 +945,14 @@ footer {
     .project-view-content {
         width: 1500px;
     }    
+}
+
+@media only screen and (max-width: 600px) {
+    #memoApp1 {
+        display: none;
+    }
+
+    #memoApp2 {
+        display: flex;
+    }        
 }
