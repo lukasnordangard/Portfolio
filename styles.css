@@ -93,11 +93,10 @@ footer {
 
 .links a {
     text-decoration: none;
-    /*color: whitesmoke;*/
     color: #0E1A2A;
     margin-left: 20px;
     margin-right: 20px;
-    transition: font-size 0.3s ease; /* Add a smooth transition effect */
+    transition: font-size 0.3s ease;
 }
 
 .links a:hover {
@@ -236,10 +235,13 @@ footer {
 
     .introduction-text h1 {
         font-size: 1.8em;
+        color: #0E1A2A;
     }
 
     .introduction-text p {
         font-size: 1em;
+        color: #0E1A2A;
+        font-weight: bolder;
     }
 }
 
@@ -869,6 +871,42 @@ footer {
     width: 100%;
 }
 
+.transparent-element-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.transparent-element {
+    opacity: 0.5;
+    background-color: blueviolet;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.not-transparent-element{
+    background-color: blueviolet;
+    padding: 20px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.transparent-element p{
+    color: white;
+    margin-bottom: 20px;
+}
+
+.not-transparent-element p{
+    color: white;
+    margin-bottom: 20px;
+}
 
 .project-img{
     display: flex;
