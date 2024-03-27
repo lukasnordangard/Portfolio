@@ -65,8 +65,8 @@ footer {
 
 
 .top-container {
-    /*background-color: #A0B2E2;*/
-    background-image: url('imgs/background.png');
+    /*background-image: url('imgs/background.png');*/
+    background-color: #A0B2E2;
     background-size: cover;
     background-position: center;
     display: flex;
